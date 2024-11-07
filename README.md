@@ -1,12 +1,13 @@
 Ownership: Alex Bodell
+Selection: Reverie
 
 
-This application is a comprehensive synthesizer that simulates a piano and supports the effects for chorus, reverb and ring modulation.
+This application is a comprehensive synthesizer that simulates a piano and supports the effects for chorus, reverb and ring modulation. I used ai for a decent amount of the math parts implemented, and part of the logic for the generation function in synthesizer.
 Components
 1. Piano Synthesis
 Description: The piano synthesis component simulates the sound of an acoustic piano. It uses the Karplus-Strong string synthesis algorithm to generate realistic piano tones. This component supports all 88 keys of a standard piano.
 Functionality:
-Karplus-Strong Synthesis: Implements a feedback loop with a delay line to simulate string vibrations.
+Karplus-Strong Synthesis: Implements a feedback loop with a delay line to simulate string vibrations. (math parts here were aided by ai)
 Frequency Control: Allows setting the frequency for each note, corresponding to the piano keys.
 Grading Elements Supported:
 Simulates the sound of an acoustic piano.
@@ -35,8 +36,8 @@ Simulates the sustain pedal effect in the score.
 5. Effects
 Description: The effects component enhances the audio output with various sound effects, including noise gating, chorus, reverberation, and ring modulation.
 Functionality:
-Chorus: Adds a shimmering effect by mixing delayed and modulated copies of the audio signal.
-Reverberation: Simulates the natural echo of a room, adding depth to the sound.
-Ring Modulation: Multiplies the audio signal with a modulating waveform to create metallic sounds.
+Chorus: Adds a shimmering effect by mixing delayed and modulated copies of the audio signal. (math parts here were aided by ai)
+Reverberation: Simulates the natural echo of a room, adding depth to the sound. (math parts here were aided by ai)
+Ring Modulation: Multiplies the audio signal with a modulating waveform to create metallic sounds. (math parts here were aided by ai)
 Grading Elements Supported:
 Implements chorus, reverberation, and ring modulation effects.
