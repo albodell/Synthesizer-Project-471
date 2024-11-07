@@ -1,5 +1,5 @@
 Ownership: Alex Bodell
-Selection: Reverie
+Selection: Reverie (xml)
 
 
 This application is a comprehensive synthesizer that simulates a piano and supports the effects for chorus, reverb and ring modulation. I used ai for a decent amount of the math parts implemented, and part of the logic for the generation function in synthesizer.
