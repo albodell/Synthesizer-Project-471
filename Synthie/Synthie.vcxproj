@@ -1,0 +1,386 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|Win32">
+      <Configuration>Template</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{72506D2B-5667-4171-B35B-EEFFEFBF5159}</ProjectGuid>
+    <RootNamespace>Synthie</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>msxml2.lib;amstrmid.lib;quartz.lib;dsound.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>msxml2.lib;amstrmid.lib;quartz.lib;dsound.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AR.cpp" />
+    <ClCompile Include="AudioNode.cpp" />
+    <ClCompile Include="audio\DirSound.cpp" />
+    <ClCompile Include="audio\DirSoundSource.cpp" />
+    <ClCompile Include="audio\DirSoundStream.cpp" />
+    <ClCompile Include="Chorus.cpp" />
+    <ClCompile Include="Instrument.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="Note.cpp" />
+    <ClCompile Include="Notes.cpp" />
+    <ClCompile Include="PianoInstrument.cpp" />
+    <ClCompile Include="Progress.cpp" />
+    <ClCompile Include="ProgressDlg.cpp" />
+    <ClCompile Include="Reverb.cpp" />
+    <ClCompile Include="Ring.cpp" />
+    <ClCompile Include="Sample.cpp" />
+    <ClCompile Include="SineWave.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Synthesizer.cpp" />
+    <ClCompile Include="Synthie.cpp" />
+    <ClCompile Include="SynthieView.cpp" />
+    <ClCompile Include="audio\Wave.cpp" />
+    <ClCompile Include="audio\WaveformBuffer.cpp" />
+    <ClCompile Include="audio\WaveformWnd.cpp" />
+    <ClCompile Include="ToneInstrument.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AR.h" />
+    <ClInclude Include="AudioNode.h" />
+    <ClInclude Include="audio\DirSound.h" />
+    <ClInclude Include="audio\DirSoundSource.h" />
+    <ClInclude Include="audio\DirSoundStream.h" />
+    <ClInclude Include="Chorus.h" />
+    <ClInclude Include="Instrument.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="Note.h" />
+    <ClInclude Include="Notes.h" />
+    <ClInclude Include="PianoInstrument.h" />
+    <ClInclude Include="Progress.h" />
+    <ClInclude Include="ProgressDlg.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="Reverb.h" />
+    <ClInclude Include="Ring.h" />
+    <ClInclude Include="Sample.h" />
+    <ClInclude Include="SineWave.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Synthesizer.h" />
+    <ClInclude Include="Synthie.h" />
+    <ClInclude Include="SynthieView.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="audio\Wave.h" />
+    <ClInclude Include="audio\WaveformBuffer.h" />
+    <ClInclude Include="audio\WaveformWnd.h" />
+    <ClInclude Include="ToneInstrument.h" />
+    <ClInclude Include="xmlhelp.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\Synthie.ico" />
+    <None Include="res\Synthie.rc2" />
+    <None Include="res\Toolbar.bmp" />
+    <None Include="res\Toolbar256.bmp" />
+    <None Include="UserImages.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Synthie.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="CompletePiano\A0#l.wav" />
+    <Media Include="CompletePiano\A0#s.wav" />
+    <Media Include="CompletePiano\A0l.wav" />
+    <Media Include="CompletePiano\A0s.wav" />
+    <Media Include="CompletePiano\A1#l.wav" />
+    <Media Include="CompletePiano\A1#s.wav" />
+    <Media Include="CompletePiano\A1l.wav" />
+    <Media Include="CompletePiano\A1s.wav" />
+    <Media Include="CompletePiano\A2#l.wav" />
+    <Media Include="CompletePiano\A2#s.wav" />
+    <Media Include="CompletePiano\A2l.wav" />
+    <Media Include="CompletePiano\A2s.wav" />
+    <Media Include="CompletePiano\A3#l.wav" />
+    <Media Include="CompletePiano\A3#s.wav" />
+    <Media Include="CompletePiano\A3l.wav" />
+    <Media Include="CompletePiano\A3s.wav" />
+    <Media Include="CompletePiano\A4#l.wav" />
+    <Media Include="CompletePiano\A4#s.wav" />
+    <Media Include="CompletePiano\A4l.wav" />
+    <Media Include="CompletePiano\A4s.wav" />
+    <Media Include="CompletePiano\A5#l.wav" />
+    <Media Include="CompletePiano\A5#s.wav" />
+    <Media Include="CompletePiano\A5l.wav" />
+    <Media Include="CompletePiano\A5s.wav" />
+    <Media Include="CompletePiano\A6#l.wav" />
+    <Media Include="CompletePiano\A6#s.wav" />
+    <Media Include="CompletePiano\A6l.wav" />
+    <Media Include="CompletePiano\A6s.wav" />
+    <Media Include="CompletePiano\A7#l.wav" />
+    <Media Include="CompletePiano\A7#s.wav" />
+    <Media Include="CompletePiano\A7l.wav" />
+    <Media Include="CompletePiano\A7s.wav" />
+    <Media Include="CompletePiano\B0l.wav" />
+    <Media Include="CompletePiano\B0s.wav" />
+    <Media Include="CompletePiano\B1l.wav" />
+    <Media Include="CompletePiano\B1s.wav" />
+    <Media Include="CompletePiano\B2l.wav" />
+    <Media Include="CompletePiano\B2s.wav" />
+    <Media Include="CompletePiano\B3l.wav" />
+    <Media Include="CompletePiano\B3s.wav" />
+    <Media Include="CompletePiano\B4l.wav" />
+    <Media Include="CompletePiano\B4s.wav" />
+    <Media Include="CompletePiano\B5l.wav" />
+    <Media Include="CompletePiano\B5s.wav" />
+    <Media Include="CompletePiano\B6l.wav" />
+    <Media Include="CompletePiano\B6s.wav" />
+    <Media Include="CompletePiano\B7l.wav" />
+    <Media Include="CompletePiano\B7s.wav" />
+    <Media Include="CompletePiano\C1#l.wav" />
+    <Media Include="CompletePiano\C1#s.wav" />
+    <Media Include="CompletePiano\C1l.wav" />
+    <Media Include="CompletePiano\C1s.wav" />
+    <Media Include="CompletePiano\C2#l.wav" />
+    <Media Include="CompletePiano\C2#s.wav" />
+    <Media Include="CompletePiano\C2l.wav" />
+    <Media Include="CompletePiano\C2s.wav" />
+    <Media Include="CompletePiano\C3#l.wav" />
+    <Media Include="CompletePiano\C3#s.wav" />
+    <Media Include="CompletePiano\C3l.wav" />
+    <Media Include="CompletePiano\C3s.wav" />
+    <Media Include="CompletePiano\C4#l.wav" />
+    <Media Include="CompletePiano\C4#s.wav" />
+    <Media Include="CompletePiano\C4l.wav" />
+    <Media Include="CompletePiano\C4s.wav" />
+    <Media Include="CompletePiano\C5#l.wav" />
+    <Media Include="CompletePiano\C5#s.wav" />
+    <Media Include="CompletePiano\C5l.wav" />
+    <Media Include="CompletePiano\C5s.wav" />
+    <Media Include="CompletePiano\C6#l.wav" />
+    <Media Include="CompletePiano\C6#s.wav" />
+    <Media Include="CompletePiano\C6l.wav" />
+    <Media Include="CompletePiano\C6s.wav" />
+    <Media Include="CompletePiano\C7#l.wav" />
+    <Media Include="CompletePiano\C7#s.wav" />
+    <Media Include="CompletePiano\C7l.wav" />
+    <Media Include="CompletePiano\C7s.wav" />
+    <Media Include="CompletePiano\C8l.wav" />
+    <Media Include="CompletePiano\C8s.wav" />
+    <Media Include="CompletePiano\D1#l.wav" />
+    <Media Include="CompletePiano\D1#s.wav" />
+    <Media Include="CompletePiano\D1l.wav" />
+    <Media Include="CompletePiano\D1s.wav" />
+    <Media Include="CompletePiano\D2#l.wav" />
+    <Media Include="CompletePiano\D2#s.wav" />
+    <Media Include="CompletePiano\D2l.wav" />
+    <Media Include="CompletePiano\D2s.wav" />
+    <Media Include="CompletePiano\D3#l.wav" />
+    <Media Include="CompletePiano\D3#s.wav" />
+    <Media Include="CompletePiano\D3l.wav" />
+    <Media Include="CompletePiano\D3s.wav" />
+    <Media Include="CompletePiano\D4#l.wav" />
+    <Media Include="CompletePiano\D4#s.wav" />
+    <Media Include="CompletePiano\D4l.wav" />
+    <Media Include="CompletePiano\D4s.wav" />
+    <Media Include="CompletePiano\D5#l.wav" />
+    <Media Include="CompletePiano\D5#s.wav" />
+    <Media Include="CompletePiano\D5l.wav" />
+    <Media Include="CompletePiano\D5s.wav" />
+    <Media Include="CompletePiano\D6#l.wav" />
+    <Media Include="CompletePiano\D6#s.wav" />
+    <Media Include="CompletePiano\D6l.wav" />
+    <Media Include="CompletePiano\D6s.wav" />
+    <Media Include="CompletePiano\D7#l.wav" />
+    <Media Include="CompletePiano\D7#s.wav" />
+    <Media Include="CompletePiano\D7l.wav" />
+    <Media Include="CompletePiano\D7s.wav" />
+    <Media Include="CompletePiano\E1l.wav" />
+    <Media Include="CompletePiano\E1s.wav" />
+    <Media Include="CompletePiano\E2l.wav" />
+    <Media Include="CompletePiano\E2s.wav" />
+    <Media Include="CompletePiano\E3l.wav" />
+    <Media Include="CompletePiano\E3s.wav" />
+    <Media Include="CompletePiano\E4l.wav" />
+    <Media Include="CompletePiano\E4s.wav" />
+    <Media Include="CompletePiano\E5l.wav" />
+    <Media Include="CompletePiano\E5s.wav" />
+    <Media Include="CompletePiano\E6l.wav" />
+    <Media Include="CompletePiano\E6s.wav" />
+    <Media Include="CompletePiano\E7l.wav" />
+    <Media Include="CompletePiano\E7s.wav" />
+    <Media Include="CompletePiano\F1#l.wav" />
+    <Media Include="CompletePiano\F1#s.wav" />
+    <Media Include="CompletePiano\F1l.wav" />
+    <Media Include="CompletePiano\F1s.wav" />
+    <Media Include="CompletePiano\F2#l.wav" />
+    <Media Include="CompletePiano\F2#s.wav" />
+    <Media Include="CompletePiano\F2l.wav" />
+    <Media Include="CompletePiano\F2s.wav" />
+    <Media Include="CompletePiano\F3#l.wav" />
+    <Media Include="CompletePiano\F3#s.wav" />
+    <Media Include="CompletePiano\F3l.wav" />
+    <Media Include="CompletePiano\F3s.wav" />
+    <Media Include="CompletePiano\F4#l.wav" />
+    <Media Include="CompletePiano\F4#s.wav" />
+    <Media Include="CompletePiano\F4l.wav" />
+    <Media Include="CompletePiano\F4s.wav" />
+    <Media Include="CompletePiano\F5#l.wav" />
+    <Media Include="CompletePiano\F5#s.wav" />
+    <Media Include="CompletePiano\F5l.wav" />
+    <Media Include="CompletePiano\F5s.wav" />
+    <Media Include="CompletePiano\F6#l.wav" />
+    <Media Include="CompletePiano\F6#s.wav" />
+    <Media Include="CompletePiano\F6l.wav" />
+    <Media Include="CompletePiano\F6s.wav" />
+    <Media Include="CompletePiano\F7#l.wav" />
+    <Media Include="CompletePiano\F7#s.wav" />
+    <Media Include="CompletePiano\F7l.wav" />
+    <Media Include="CompletePiano\F7s.wav" />
+    <Media Include="CompletePiano\G1#l.wav" />
+    <Media Include="CompletePiano\G1#s.wav" />
+    <Media Include="CompletePiano\G1l.wav" />
+    <Media Include="CompletePiano\G1s.wav" />
+    <Media Include="CompletePiano\G2#l.wav" />
+    <Media Include="CompletePiano\G2#s.wav" />
+    <Media Include="CompletePiano\G2l.wav" />
+    <Media Include="CompletePiano\G2s.wav" />
+    <Media Include="CompletePiano\G3#l.wav" />
+    <Media Include="CompletePiano\G3#s.wav" />
+    <Media Include="CompletePiano\G3l.wav" />
+    <Media Include="CompletePiano\G3s.wav" />
+    <Media Include="CompletePiano\G4#l.wav" />
+    <Media Include="CompletePiano\G4#s.wav" />
+    <Media Include="CompletePiano\G4l.wav" />
+    <Media Include="CompletePiano\G4s.wav" />
+    <Media Include="CompletePiano\G5#l.wav" />
+    <Media Include="CompletePiano\G5#s.wav" />
+    <Media Include="CompletePiano\G5l.wav" />
+    <Media Include="CompletePiano\G5s.wav" />
+    <Media Include="CompletePiano\G6#l.wav" />
+    <Media Include="CompletePiano\G6#s.wav" />
+    <Media Include="CompletePiano\G6l.wav" />
+    <Media Include="CompletePiano\G6s.wav" />
+    <Media Include="CompletePiano\G7#l.wav" />
+    <Media Include="CompletePiano\G7#s.wav" />
+    <Media Include="CompletePiano\G7l.wav" />
+    <Media Include="CompletePiano\G7s.wav" />
+    <Media Include="CompletePiano\pedald.wav" />
+    <Media Include="CompletePiano\pedalu.wav" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="Synthie.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
