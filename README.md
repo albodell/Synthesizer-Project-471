@@ -1,7 +1,7 @@
 Ownership: Alex Bodell
 
 
-This application is a comprehensive synthesizer that simulates a piano and supports various audio effects. It is designed to provide realistic piano sounds and includes features such as polyphony, envelopes, pedal simulation, and multiple audio effects.
+This application is a comprehensive synthesizer that simulates a piano and supports the effects for chorus, reverb and ring modulation.
 Components
 1. Piano Synthesis
 Description: The piano synthesis component simulates the sound of an acoustic piano. It uses the Karplus-Strong string synthesis algorithm to generate realistic piano tones. This component supports all 88 keys of a standard piano.
@@ -38,6 +38,5 @@ Functionality:
 Chorus: Adds a shimmering effect by mixing delayed and modulated copies of the audio signal.
 Reverberation: Simulates the natural echo of a room, adding depth to the sound.
 Ring Modulation: Multiplies the audio signal with a modulating waveform to create metallic sounds.
-Noise Gating: Reduces unwanted noise by cutting off low-level signals.
 Grading Elements Supported:
 Implements chorus, reverberation, and ring modulation effects.
