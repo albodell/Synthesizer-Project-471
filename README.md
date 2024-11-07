@@ -1,8 +1,6 @@
 Ownership: Alex Bodell
 
 
-Synthesizer Application README
-Overview
 This application is a comprehensive synthesizer that simulates a piano and supports various audio effects. It is designed to provide realistic piano sounds and includes features such as polyphony, envelopes, pedal simulation, and multiple audio effects.
 Components
 1. Piano Synthesis
